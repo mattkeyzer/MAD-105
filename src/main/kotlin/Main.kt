@@ -1,7 +1,16 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import kotlin.math.abs
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    var temperature = 0F
+    val low = 97.5F
+    val normal = 99.5F
+
+    print ("What is the temperature?")
+    temperature = readLine()!!.toFloat()
+    if (temperature < low)
+        println("The temperature is $temperature, that's low")
+    else if (temperature <= normal)
+        println("The temperature is $temperature, that's normal")
+    else
+        println("The temperature is $temperature, that's hot")
 }
