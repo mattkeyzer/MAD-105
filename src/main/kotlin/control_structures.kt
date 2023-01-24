@@ -1,5 +1,3 @@
-import kotlin.math.abs
-
 fun main() {
     var temperature = 0F
     val low = 97.5F
