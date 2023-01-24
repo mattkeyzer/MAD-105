@@ -3,6 +3,7 @@ fun main() {
     val low = 97.5F
     val normal = 99.5F
 
+
     print ("What is the temperature?")
     temperature = readLine()!!.toFloat()
     if (temperature < low)
