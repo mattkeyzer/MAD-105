@@ -5,6 +5,7 @@ fun main(args: Array<String>) {
     if (number !in 1..10)
         println("Please try again!")
 
+
     else {
         var numString = "x"
 
