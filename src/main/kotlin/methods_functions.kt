@@ -1,6 +1,7 @@
 var userin = 0
 var x = 0.0
 var y = 0.0
+var r = 0.0
 fun areaoftriangle(x: Double, y: Double): Double{
     var areaoftrianglesolution =  x * y * 0.5
     return areaoftrianglesolution
@@ -16,8 +17,8 @@ fun areaofrectangle(x: Double, y: Double): Double{
     return areaofrectanglesolution
 }
 
-fun areaofcircle(x: Double, y: Double): Double{
-    var areaofcirclesolution =  x * y
+fun areaofcircle(r: Double): Double{
+    var areaofcirclesolution = 3.14 * r * r
     return areaofcirclesolution
 }
 
@@ -64,12 +65,11 @@ fun main() {
         }
         if (userin == 4) {
             println("yay circle")
-            println("Please provide your first number")
-            x = readLine()!!.toDouble()
-            println("Please provide your second number")
-            y = readLine()!!.toDouble()
+            println("Please provide your radius")
+            r = readLine()!!.toDouble()
 
-            println("your area is ${areaofcircle(x,y)} units")
+
+            println("your area is ${areaofcircle(r)} units")
         }
     }
 
