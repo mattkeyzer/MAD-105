@@ -1,6 +1,6 @@
 package classes
 
-class contacts constructor(var employeeName: String,
+class Contacts constructor(var employeeName: String,
                            var employeeNumber: String,
                            var employeeShift: Int){
     init {
