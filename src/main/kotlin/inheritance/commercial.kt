@@ -1,4 +1,9 @@
 package inheritance
+/**
+ * @author Matt Keyzer
+ * date: mar 6 2023
+ *
+ */
 open class Commercial (var propertyName: String,
                   customerName: String,
                   customerPhone: String,
@@ -24,7 +29,7 @@ open class Commercial (var propertyName: String,
         var propertyNamesArray = arrayListOf<String>()
         var customerAddressArray = arrayListOf<String>()
         var squareFootageArray = arrayListOf<Double>()
-
+        // if user has more than one property
         if (propertyAmount > 1) {
             while (count != 0) {
                 println("Please enter the name of your property: ")
@@ -44,6 +49,7 @@ open class Commercial (var propertyName: String,
                 squareFootageArray += commercialRate
                 count -= 1
             }
+            // one property (no discount)
         } else {
             println("Please enter the name of your property: ")
             propertyName = readLine()!!.toString()

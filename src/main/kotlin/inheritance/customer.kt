@@ -1,5 +1,11 @@
 package inheritance
+/**
+ * @author Matt Keyzer
+ * date: mar 6 2023
+ *
+ */
 
+//Customer class set up
 open class Customer (customerName: String,
                      customerPhone: String,
                      customerAddress: String,

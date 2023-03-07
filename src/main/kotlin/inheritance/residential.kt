@@ -1,5 +1,10 @@
 package inheritance
 
+/**
+ * @author Matt Keyzer
+ * date: mar 6 2023
+ *
+ */
 open class Residential (var propertyName: String,
                         var senior: Boolean,
                        customerName: String,
@@ -33,10 +38,10 @@ open class Residential (var propertyName: String,
         propertyAmount = readLine()!!.toInt()
         var count = 0
         count = propertyAmount
+        /* adding info for array for printing to user*/
         var propertyNamesArray = arrayListOf<String>()
         var customerAddressArray = arrayListOf<String>()
         var squareFootageArray = arrayListOf<Double>()
-
         if (senior) {
             while (count != 0) {
                 println("Please enter the name of your property: ")
@@ -56,7 +61,7 @@ open class Residential (var propertyName: String,
                 squareFootageArray += commercialRate
                 count -= 1
             }
-
+        //if not senior
         } else {
             while (count != 0) {
                 println("Please enter the name of your property: ")
